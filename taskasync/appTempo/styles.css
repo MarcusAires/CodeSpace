@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    background-color: whitesmoke;
 }
 
 p, h5 {
@@ -9,8 +10,8 @@ p, h5 {
 
 .app {
     position: relative;
-    width: 414px;
-    height: 420px;
+    width: 600px;
+    height: 400px;
     display: block;
     margin: auto;
     text-align: center;
@@ -69,13 +70,15 @@ input::placeholder {
 #info {
     line-height: 0.5rem;
     color: #fff;
+    flex: auto;
 }
 
 #info h4 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     margin: 2rem;
+    flex: content;
 }
 
 #info .description {
@@ -107,10 +110,12 @@ input::placeholder {
 #temp {
     font-size: 2rem;
     color: #fff;
+    flex: content;
 }
 
 #temperature p {
     font-size: 14px;
+    flex: content;
 }
 
 #temperature h2 {
@@ -128,6 +133,7 @@ input::placeholder {
     border: black 2px;
     color: #fff;
     padding-bottom: 30px;
+    flex: content;
 }
 
 .extra-info h5 {
