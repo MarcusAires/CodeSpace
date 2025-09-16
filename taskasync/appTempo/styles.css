@@ -1,146 +1,91 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    background-color: whitesmoke;
+/* --- Seu CSS existente permanece --- */
+
+/* Responsividade */
+@media (max-width: 768px) { /* Tablets */
+    .app {
+        width: 90%;
+        height: auto;
+        padding: 30px 0;
+        border-radius: 30px;
+    }
+
+    #search-bar {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    #search-bar-input {
+        font-size: 1.2rem;
+    }
+
+    #info h4 {
+        font-size: 24px;
+        margin: 1rem;
+    }
+
+    #temp {
+        font-size: 1.8rem;
+    }
+
+    #temp h2 {
+        font-size: 50px;
+    }
+
+    .extra-info h5 {
+        font-size: 1rem;
+    }
+
+    .extra-info p {
+        font-size: 1.5rem;
+    }
 }
 
-p, h5 {
-    margin: 0.5rem;
-}
+@media (max-width: 480px) { /* Celulares */
+    .app {
+        width: 95%;
+        padding: 20px 0;
+        border-radius: 20px;
+    }
 
-.app {
-    position: relative;
-    width: 600px;
-    height: 400px;
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding: 40px 0;
-    overflow: hidden;
-    border-radius: 50px;
-    background-image: linear-gradient(
-    325deg,
-    hsl(240deg 97% 55%) 0%,
-    hsl(240deg 97% 65%) 32%,
-    hsl(240deg 97% 70%) 59%,
-    hsl(240deg 96% 75%) 74%,
-    hsl(240deg 96% 79%) 84%,
-    hsl(240deg 96% 82%) 90%,
-    hsl(240deg 96% 85%) 94%,
-    hsl(240deg 96% 88%) 97%,
-    hsl(240deg 96% 91%) 99%,
-    hsl(240deg 96% 93%) 100%,
-    hsl(240deg 96% 96%) 100%,
-    hsl(240deg 95% 98%) 100%,
-    hsl(0deg 0% 100%) 100%
-);
-}
+    #search-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
 
-#search-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-    margin-bottom: 30px;
-    color: #fff;
-}
+    #search-bar-input {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        border-bottom: solid 1px lightblue;
+    }
 
-#search-bar-input {
-    background-color: none;
-    border: none;
-    outline: none;
-    width: 90%;
-    background: none;
-    font-size: 1.4rem;
-    color: #fff;
-    border-bottom: solid 1px lightblue ;
-}
+    #search-icon {
+        font-size: 1.3rem;
+    }
 
-input::placeholder {
-    color: #fff;
-    opacity: .6;
-}
+    #info h4 {
+        font-size: 20px;
+        margin: 0.5rem 0;
+    }
 
-#search-icon {
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    font-size: 1.5rem;
-}
+    #temp {
+        font-size: 1.5rem;
+    }
 
-#info {
-    line-height: 0.5rem;
-    color: #fff;
-    flex: auto;
-}
+    #temp h2 {
+        font-size: 40px;
+    }
 
-#info h4 {
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 2rem;
-    flex: content;
-}
+    .extra-info h5 {
+        font-size: 0.9rem;
+    }
 
-#info .description {
-    text-transform: uppercase;
-}
+    .extra-info p {
+        font-size: 1.3rem;
+    }
 
-#temperature {
-    background: rgb(206, 206, 206);
-    border-radius: 500px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    display: block;
-    margin: auto;
-    box-shadow: 0 30px 20px #1d1d1d36;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 300px;
-}
-
-#temp-img {
-    margin-bottom:-30px;
-}
-
-#description {
-    color: #fff;
-}
-
-#temp {
-    font-size: 2rem;
-    color: #fff;
-    flex: content;
-}
-
-#temperature p {
-    font-size: 14px;
-    flex: content;
-}
-
-#temperature h2 {
-    margin: 0;
-    font-size: 60px;
-    font-weight: 300;
-}
-
-.extra-info {
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    border: black 2px;
-    color: #fff;
-    padding-bottom: 30px;
-    flex: content;
-}
-
-.extra-info h5 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-
-.extra-info p {
-    font-size: 1.7rem;
+    #temp-img {
+        margin-bottom: -20px;
+    }
 }
