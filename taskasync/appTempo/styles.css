@@ -1,5 +1,3 @@
-/* --- Seu CSS existente --- */
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -165,12 +163,12 @@ input::placeholder {
     }
 
     #info h4 {
-        font-size: 24px; /* reduz apenas o tamanho da fonte */
-        margin: 2rem; /* mantém margem original para centralização */
+        font-size: 24px;
+        margin: 2rem; 
     }
 
     #temp h2 {
-        font-size: 50px; /* ajusta temperatura */
+        font-size: 50px; 
     }
 
     .extra-info h5 {
@@ -204,7 +202,7 @@ input::placeholder {
 
     #info h4 {
         font-size: 20px;
-        margin: 2rem; /* mantém margem para centralização */
+        margin: 2rem; 
     }
 
     #temp h2 {
@@ -218,7 +216,6 @@ input::placeholder {
         font-size: 1.3rem;
     }
 
-    /* Mantém margem do ícone para não quebrar o layout */
     #temp-img {
         margin-bottom: -30px;
     }
