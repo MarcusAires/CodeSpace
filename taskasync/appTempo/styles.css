@@ -1,4 +1,4 @@
-/* --- Seu CSS existente permanece --- */
+/* --- Seu CSS existente --- */
 
 /* Responsividade */
 @media (max-width: 768px) { /* Tablets */
@@ -6,7 +6,7 @@
         width: 90%;
         height: auto;
         padding: 30px 0;
-        border-radius: 30px;
+        border-radius: 40px;
     }
 
     #search-bar {
@@ -20,11 +20,11 @@
 
     #info h4 {
         font-size: 24px;
-        margin: 1rem;
+        margin: 1.5rem 0;
     }
 
     #temp {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     #temp h2 {
@@ -38,13 +38,17 @@
     .extra-info p {
         font-size: 1.5rem;
     }
+
+    #temp-img {
+        margin-bottom: -25px;
+    }
 }
 
 @media (max-width: 480px) { /* Celulares */
     .app {
         width: 95%;
         padding: 20px 0;
-        border-radius: 20px;
+        border-radius: 30px;
     }
 
     #search-bar {
@@ -57,7 +61,6 @@
         width: 100%;
         font-size: 1rem;
         margin-bottom: 10px;
-        border-bottom: solid 1px lightblue;
     }
 
     #search-icon {
@@ -66,7 +69,7 @@
 
     #info h4 {
         font-size: 20px;
-        margin: 0.5rem 0;
+        margin: 1rem 0;
     }
 
     #temp {
